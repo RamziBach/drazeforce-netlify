@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { Formik, Form, useField } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
@@ -74,9 +74,11 @@ const Contact = () => {
           </h3>
           <div className={styles.parent}>
             <div className={styles.imgContainer}>
-              <div className={styles.imgContainerChild}>
-                <Image layout="fill" src="/logo.png" alt="logo" />
-              </div>
+              <img
+                src="/logo.png"
+                alt="logo"
+                className={styles.imgContainerChild}
+              />
             </div>
             <div className={styles.formContainer}>
               <Formik

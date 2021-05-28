@@ -33,13 +33,14 @@
   color: var(--clr-accent);
 }
 
-.imgContainer {
-  position: relative;
+/* .imgContainer {
   width: 200px;
   height: 200px;
-}
+} */
 
 .profile {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 
@@ -70,7 +71,7 @@
 }
 
 @media (max-width: 1600px) {
-  .imgContainer {
+  .profile {
     width: 150px;
     height: 150px;
   }

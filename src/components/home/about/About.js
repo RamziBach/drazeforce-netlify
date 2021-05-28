@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import ReactPlayer from 'react-player/lazy';
 import styles from './about.module.css';
 
@@ -17,14 +17,7 @@ const About = () => {
           </h3>
           <div className={styles.parent}>
             <div className={styles.content}>
-              <div className={styles.imgContainer}>
-                <Image
-                  className={styles.profile}
-                  src="/profile.jpg"
-                  alt="logo"
-                  layout="fill"
-                />
-              </div>
+              <img className={styles.profile} src="/profile.jpg" alt="logo" />
               <h2 className={styles.title}>Nick Morris</h2>
               <p className={styles.description}>
                 Growing up in the 90s, Nick Morris was always inspired by the

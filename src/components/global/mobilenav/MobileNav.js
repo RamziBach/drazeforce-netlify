@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
-import VipAuth from '../vip/VipAuth';
+// import VipAuth from '../vip/VipAuth';
 import styles from './mobilenav.module.css';
 
 const MobileNav = ({ price, display }) => {
@@ -30,9 +30,7 @@ const MobileNav = ({ price, display }) => {
             <a className={styles.btn}>vip</a>
           </Link>
           <div className={styles.drazeCoin} aria-label="Draze coin price">
-            <div className={styles.logo}>
-              <Image src="/logo2.png" alt="logo" layout="fill" />
-            </div>
+            <img src="/logo2.png" alt="logo" className={styles.logo} />
             <a
               href="https://rally.io/creator/DRAZE/"
               target="_blank"
